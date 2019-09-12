@@ -1,0 +1,53 @@
+nav > a:hover {
+    animation-duration: 300ms;
+    animation-name: hover;
+}
+
+@keyframes hover {
+    from {
+        background-color: #ff5854;
+        color: #fff;
+    }
+  
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+
+    25% {
+        border-bottom: 2px solid black;
+    }
+
+    50% {
+        background-color: #ffffff;
+        border-bottom: 3px solid black;
+    }
+
+    75% {
+        background-color: #ff5854;
+    }
+
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+.gallery-left:hover {
+    animation-duration: 500ms;
+    animation-name: arrow;
+}
+
+.gallery-right:hover {
+    animation-duration: 500ms;
+    animation-name: arrow;
+}
+
+@keyframes arrow {
+    from {
+        opacity: 0.15;
+    }
+  
+    to {
+        opacity: 0.5;
+    }
+}

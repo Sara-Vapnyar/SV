@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+}
+
+    header h1 {
+        transform: translate(50%);
+        text-align: center;
+        align-self: center;
+        font-family: 'Roboto Slab', serif;
+    }
+
+nav {
+    display: flex;
+
+    width: 100%;
+    height: 30px;
+    background-color: #ff5854;
+}
+
+    nav > a {
+        padding: 5px 20px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav > a:hover {
+        background-color: #ffffff;
+        color: black;
+        border-bottom: 3px solid black;
+    }
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery {
+    width: 80%;
+    min-height: 1300px; 
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-image: url('./img/nine.jpg');
+    background-size: cover;
+}
+
+    .gallery-left {
+        width: 150px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0.15;
+    }
+        .gallery-left > img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+    .gallery-left:hover {
+        opacity: 0.5;
+    }
+
+
+    .gallery-right {
+        width: 150px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0.15;
+    }
+        .gallery-right > img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+    .gallery-right:hover {
+        opacity: 0.5;
+    }
+
+
+footer {
+    width: 100%;
+    background-color: #ff5854;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer .instlogo {
+    width: 30px;
+}
